@@ -1,6 +1,4 @@
-/* Servo controller with WiFi AP CaptivePortal and Authentication service
-	for Arduino Wemos D1 module.
-   by Allan Ayes Ramírez
+/* Servo controller with WiFi AP CaptivePortal and Authentication service for Arduino Wemos D1 module by Slam
    E-mail: aayes89@gmail.com
    (21/09/2022)
 */
@@ -281,10 +279,10 @@ void loop() {
   //Serial.print("Network status: ");
   //Serial.println(wifi_status);
   if (wifi_status == WL_CONNECTED) {
-    Serial.println("Conexion establecida...\nActualizando entradas en el DNS");
+    Serial.println("Connection established...\nUpdating DNS entries");
     MDNS.update();
   } else if (wifi_status == WL_NO_SSID_AVAIL) {
-    Serial.println("Desconectando de la red!");
+    Serial.println("Disconnecting from the network!");
     WiFi.disconnect();
   }
   // DNS
