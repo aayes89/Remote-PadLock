@@ -15,7 +15,7 @@
 #include <Stepper.h>
 
 #ifndef STASSID
-#define STASSID "HomeLocker"
+#define STASSID "HomePADLock"
 #define STAPSK "1234567890"
 #define USR "administrator"
 #define PASS "Admin1str@t0r."
@@ -32,7 +32,7 @@ const char* www_password = PASS;
 
 // allows you to set the realm of authentication Default:"Login Required"
 const char* www_realm = REALM;
-// the Content of the HTML response in case of Unautherized Access Default:empty
+// the content of the HTML response in case of unauthorized access Default: empty
 String authFailResponse = AERROR;
 
 // One time reset flag
